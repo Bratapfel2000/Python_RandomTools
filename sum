@@ -1,4 +1,4 @@
-       def summe(f):
+def sum(f):
     total = 0
     k = 0
     while True:
