@@ -1,0 +1,9 @@
+       def summe(f):
+    total = 0
+    k = 0
+    while True:
+        total += k
+        if k == f:
+            print(total)
+            break
+        k += 1
