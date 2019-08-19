@@ -15,7 +15,7 @@ drei = zwei[0]
 #print(drei.text)
 
 #waehlt zufaellig gut oder schlecht aus +impor random
-a = ["gut", "schlecht", "voll gut", "ziemlich fuer den Arsch", "naja", "geht so", "spitzenklasse",
+a = ["gut", "schlecht", "voll gut", "naja", "geht so", "spitzenklasse",
      "erste Sahne", "zweite Sahne", "voll Zehlendorf", "unangenehm", "gar nicht mal so gut",
      "besser", "schlechter", "hipstermaessig"]
 
