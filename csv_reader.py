@@ -1,5 +1,3 @@
-
-
 def readMyFile(filename):
     x = []
     y = []
@@ -10,4 +8,3 @@ def readMyFile(filename):
             y.append(row[1])
     return lang1, lang2
 x,y = readMyFile(vocabulary_file)
-
