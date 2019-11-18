@@ -1,0 +1,32 @@
+#set matrix size
+#m,n global so other functions can use it(printmatrix)
+#create matrix, then print it. Return m and n
+def set_matrix_size():
+    global m
+    global n
+    m = int(input("Set m: "))
+    n = int(input("Set n: "))        
+    print("m=",m,"n=",n)
+    matrix_nm(m,n)
+    print_matrix(m,n)
+    return m,n
+
+#t is matrix with entries nxm and index number
+t = {}
+def matrix_nm(m,n):
+    for i in range(1,n+1):
+        for j in range(1,m+1):
+            t[len(t)+1] = [i,j,len(t)+1]
+
+#prints a line of a matrix
+def print_line(m,n,x):
+    for i in range(1,m+1):
+        print('%-2s' % str(t[i+(x-1)*m][2]), end = " ")
+        
+#puts together lines of matrix and displays it
+def print_matrix(m,n):
+    for i in range(1,n+1):
+        print_line(m,n,i)
+        print("")
+
+m,n = set_matrix_size()
