@@ -1,14 +1,11 @@
+
 #set matrix size
-#m,n global so other functions can use it(printmatrix)
 #create matrix, then print it. Return m and n
 def set_matrix_size():
-    global m
-    global n
     m = int(input("Set m: "))
     n = int(input("Set n: "))        
     print("m=",m,"n=",n)
     matrix_nm(m,n)
-    print_matrix(m,n)
     return m,n
 
 #t is matrix with entries nxm and index number
@@ -29,4 +26,14 @@ def print_matrix(m,n):
         print_line(m,n,i)
         print("")
 
-m,n = set_matrix_size()
+def main():
+    m,n = set_matrix_size()
+    print("")
+    print(m, "x",n,"- Matrix: ")
+    print_matrix(m,n)
+    print("")
+    print("'t'-Matrix:")
+    print(t)
+    
+if __name__ == '__main__':
+    main()
