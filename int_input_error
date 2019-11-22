@@ -1,0 +1,11 @@
+def enter_only_int(display_input, error_message):
+    while True:
+        try:
+            enter_val  = int(input(display_input))
+        except ValueError:
+            print(error_message)
+            continue
+        else:
+            return enter_val 
+
+enter_only_int("enter: ","wrong input")
